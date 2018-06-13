@@ -1,12 +1,11 @@
 {
-  "name": "loki",
+  "name": "react-app-boilerplate",
   "version": "0.0.1",
-  "description": "The Nextel Prepaid on Web",
+  "description": "react boilerplate",
   "main": "index.js",
-  "repository": "https://gitlab.nexteldigital.com.br/ragnarok/loki",
+  "repository": "git@github.com:thefelpes/react-app-boilerplate.git",
   "author": "Felipe Oliveira",
-  "license": "UNLICENSED",
-  "private": true,
+  "license": "MIT",
   "dependencies": {
     "babel-plugin-transform-async-to-generator": "^6.24.1",
     "debug": "^3.1.0",
