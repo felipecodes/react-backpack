@@ -2,7 +2,6 @@
   "name": "react-app-boilerplate",
   "version": "0.0.1",
   "description": "react boilerplate",
-  "main": "index.js",
   "repository": "git@github.com:thefelpes/react-app-boilerplate.git",
   "author": "Felipe Oliveira",
   "license": "MIT",
