@@ -1,11 +1,11 @@
 const path = require('path');
+/* eslint-disable import/no-extraneous-dependencies */
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+/* eslint-enable import/no-extraneous-dependencies */
 
 module.exports = {
-  entry: {
-    app: path.join(__dirname, '..', 'src', 'index.js'),
-  },
+  entry: [path.join(__dirname, '..', 'src', 'index.js')],
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
@@ -18,17 +18,13 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
+          loader: 'babel-loader',
         },
       },
     ],
   },
   output: {
-    filename:
-      process.env.NODE_ENV === 'production'
-        ? '[name].[hash].bundle.js'
-        : '[name].bundle.js',
-    path: path.resolve(__dirname, '..', 'dist'),
-    publicPath: '/',
+    filename: '[name].[hash].bundle.js',
+    path: path.join(__dirname, '..', 'dist'),
   },
 };

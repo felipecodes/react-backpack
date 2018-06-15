@@ -8,7 +8,6 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "babel-plugin-transform-async-to-generator": "^6.24.1",
     "debug": "^3.1.0",
     "koa": "^2.5.1",
     "react": "^16.4.0",
@@ -19,6 +18,7 @@
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
     "backpack-core": "^0.7.0",
     "clean-webpack-plugin": "^0.1.19",
     "cross-env": "^5.1.6",
@@ -39,8 +39,8 @@
     "hyperion:start": "cross-env DEBUG=hyperion* cross-env PORT=3001 node build-hyperion/main.js",
     "hyperion:build": "cross-env DIR=hyperion backpack build",
     "hyperion:dev": "cross-env DEBUG=hyperion* cross-env PORT=3001 cross-env DIR=hyperion backpack",
-    "web:build": "cross-env NODE_ENV=production npx webpack --config webpack/webpack.prod.js",
-    "web:dev": "npx webpack-dev-server --open --config webpack/webpack.dev.js",
+    "web:build": "cross-env NODE_ENV=production webpack --config webpack/webpack.prod.js",
+    "web:dev": "webpack-dev-server --open --config webpack/webpack.dev.js",
     "eslint": "eslint src"
   }
 }
