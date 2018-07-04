@@ -1,5 +1,14 @@
 {
+  "parser": "babel-eslint",
   "extends": "airbnb",
+  "plugins": [
+    "module"
+  ],
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
+  },
   "env": {
     "browser": true,
     "node": true,

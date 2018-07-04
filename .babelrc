@@ -12,6 +12,15 @@
     "react"
   ],
   "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./src"
+        ]
+      }
+    ],
+    "transform-export-extensions",
     "transform-async-to-generator"
   ]
 }
