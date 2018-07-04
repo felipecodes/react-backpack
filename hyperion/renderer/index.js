@@ -7,9 +7,10 @@ import App from '../../src/App';
 
 const renderer = (ctx) => {
   try {
+    const app = ReactDOMServer.renderToString(<App />);
     ctx.type = 'html';
     ctx.status = 200;
-    ctx.body = ReactDOMServer.renderToString(<App />);
+    ctx.body = app;
   } catch (error) {
     debug(error);
     const sentryId =
