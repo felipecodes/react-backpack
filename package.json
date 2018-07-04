@@ -8,6 +8,7 @@
   "dependencies": {
     "debug": "^3.1.0",
     "koa": "^2.5.1",
+    "koa-static": "^5.0.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0"
   },
